@@ -73,3 +73,7 @@ Another test worker
 ```
 
 The second output is what I would expect.
+
+From then on the workers seem to run concurrently when called.
+
+If you restart sidekiq then the behaviour reverts and the first time you run the workers the first blocks the second.
